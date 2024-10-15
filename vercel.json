@@ -1,0 +1,17 @@
+{
+    "builds": [
+      {
+        "src": "sgap/wsgi.py",
+        "use": "@vercel/python",
+        "config": {
+          "maxLambdaSize": "15mb",
+          "runtime": "Python3.12"
+        }
+      }],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "sgap/wsgi.py"
+      }
+    ]
+  }
