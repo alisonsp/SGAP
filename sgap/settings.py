@@ -77,13 +77,22 @@ WSGI_APPLICATION = 'sgap.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'alisonsp$sgap2',
+        'USER': 'alisonsp',
+        'PASSWORD': '3Q9Zc1bsJlcg7vEsrgBGKO1V',
+        'HOST': 'alisonsp.mysql.pythonanywhere-services.com',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -119,7 +128,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_ROOT = '/home/alisonsp/SGAP/'
+STATIC_ROOT = '/home/alisonsp/SGAP/static'
 STATIC_URL = "static/"
 
 # Default primary key field type
