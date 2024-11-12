@@ -30,15 +30,15 @@ class DeviceAdmin(admin.ModelAdmin):
             # reader = csv.reader(csv_file, delimiter=';')
                 for line in reader:
                     Device.objects.create(                        
-                        device_id = line[0],
-                        device_status = line[1],
-                        city = line[2],
-                        zone = line[3],
-                        address = line[4],
-                        address_number = line[5],
+                        device_id = line[0],                        
+                        city = line[1],
+                        zone = line[2],                        
+                        address = line[3],
+                        address_number = line[4],
+                        zip_code = line[5],
                         complemento = line[6],
-                        zip_code = line[7],
-                        travel_time = line[8],
+                        travel_time = line[7],
+                        device_status = line[8], 
                         observacoes = line[9],
                     )
 

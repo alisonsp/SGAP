@@ -6,7 +6,7 @@ class Device(models.Model):
     device_id = models.SmallIntegerField(verbose_name="ID")
     device_status = models.BooleanField(verbose_name="Status")
     city = models.CharField(max_length=20, verbose_name="Cidade")
-    zone = models.CharField(max_length=20, verbose_name="Zona")
+    zone = models.CharField(max_length=20, verbose_name="Região")
     address = models.CharField(max_length=20, verbose_name="Endereço")
     address_number = models.CharField(max_length=6, verbose_name="Número")
     complemento = models.CharField(max_length=250, verbose_name="Complemento")
