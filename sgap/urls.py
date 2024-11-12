@@ -19,6 +19,9 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('manager.urls')),
+    path('', admin.site.urls),
+    #path('',include('manager.urls')),
 ]
-
+admin.site.site_header = "SGAP"
+admin.site.site_title = "SGAP"
+admin.site.index_title = "SGAP"
